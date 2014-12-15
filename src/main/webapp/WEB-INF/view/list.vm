@@ -1,0 +1,8 @@
+<h2>List of Quests</h2>
+<ul>
+    #foreach($quest in $quests)
+        <li>
+            <a href="/quest/${quest.id}">${quest.title}</a>
+        </li>
+    #end
+</ul>

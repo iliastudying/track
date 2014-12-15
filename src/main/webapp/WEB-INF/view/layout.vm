@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=cp1251" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spring MVC and Velocity</title>
+    </head>
+    <body>
+        <h1>Spring MVC and Velocity</h1>
+
+            $screen_content
+
+        <hr/>
+        ITMO University 2014
+    </body>
+</html>

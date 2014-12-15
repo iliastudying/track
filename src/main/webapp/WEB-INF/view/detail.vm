@@ -1,0 +1,4 @@
+<h2>Detail of quest</h2>
+<p>Id: ${quest.id}</p>
+<p>Title: ${quest.title}</p>
+<p>${quest.content}</p>
