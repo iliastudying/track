@@ -1,4 +1,4 @@
-<h2>List of Quests</h2>
+<h2>List of Quests/Список задач</h2>
 <ul>
     #foreach($quest in $quests)
         <li>

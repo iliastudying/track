@@ -13,7 +13,13 @@
     <mvc:annotation-driven/>
 
     <bean id="velocityConfig" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
-        <property name="resourceLoaderPath" value="/WEB-INF/view/"/>
+        <property name="resourceLoaderPath" value="/WEB-INF/templates/"/>
+        <property name="velocityProperties">
+            <props>
+                <prop key="input.encoding">utf-8</prop>
+                <prop key="output.encoding">utf-8</prop>
+            </props>
+        </property>
     </bean>
 
     <bean id="viewResolver" class="org.springframework.web.servlet.view.velocity.VelocityLayoutViewResolver">
@@ -21,8 +27,9 @@
         <property name="prefix" value="" />
         <property name="layoutUrl" value="layout.vm"/>
         <property name="suffix" value=".vm" />
+        <property name="contentType" value="text/html; charset=UTF-8" />
     </bean>
 
-    <context:component-scan base-package="ru.ifmo.kot.track.web" />
+    <context:component-scan base-package="ru.ifmo.kot.track.mvc.controller" />
 
 </beans>

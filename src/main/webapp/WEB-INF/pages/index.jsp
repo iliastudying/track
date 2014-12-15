@@ -1,8 +1,10 @@
+<%--Page is not currently used--%>
+<!DOCTYPE html>
 <html>
-<body>
-<h1>Maven + Spring MVC Web Project Example</h1>
- 
-<h3>Message : ${message}</h3>
-<h3>Counter : ${counter}</h3>	
-</body>
+<head>
+    <meta charset="utf-8">
+</head>
+    <body>
+        <h1>Spring MVC Web Project</h1>
+    </body>
 </html>

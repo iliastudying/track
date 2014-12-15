@@ -1,21 +1,21 @@
-package ru.ifmo.kot.track.web;
+package ru.ifmo.kot.track.mvc.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import ru.ifmo.kot.track.data.QuestService;
+import ru.ifmo.kot.track.mvc.data.QuestService;
 
 /**
  * Created by Ilia on 14.12.2014.
  */
 @Controller
-public class WebController {
+public class BaseController {
     private QuestService questService;
 
     @Autowired
-    public WebController(QuestService questService) {
+    public BaseController(QuestService questService) {
         this.questService = questService;
     }
 

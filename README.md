@@ -9,8 +9,8 @@ track
 
 **Run application**
   * Install Maven
-  * Go to application directory - 'cd switter'
-  * Run server - 'mvn jetty:run'
-  * Open in browser - 'http://localhost:8080'
+  * Go to application directory - `cd %project_name%`
+  * Run server - `mvn jetty:run`
+  * Open in browser - `http://localhost:8080`
 
 	

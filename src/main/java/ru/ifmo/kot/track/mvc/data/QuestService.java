@@ -1,4 +1,4 @@
-package ru.ifmo.kot.track.data;
+package ru.ifmo.kot.track.mvc.data;
 
 import org.springframework.stereotype.Service;
 
@@ -18,7 +18,7 @@ public class QuestService {
     public QuestService() {
         storage.put(1, new Quest(1, "Name of another quest", "Lorem Ipsum Dolor Set Amet, Consectetur Adipiscing Elit."));
         storage.put(2, new Quest(2, "Some name", "Lorem Ipsum Dolor Set Amet, Consectetur Adipiscing Elit."));
-        storage.put(3, new Quest(3, "Third quest", "Lorem Ipsum Dolor Set Amet, Consectetur Adipiscing Elit."));
+        storage.put(3, new Quest(3, "Третья задача", "Lorem Ipsum Dolor Set Amet, Consectetur Adipiscing Elit."));
     }
 
     public Quest getQuestById(Integer id) {

@@ -11,8 +11,13 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jdk.version>1.7</jdk.version>
-		<spring.version>3.1.2.RELEASE</spring.version>
+		<spring.version>4.0.3.RELEASE</spring.version>
+		<spring.data>1.3.4.RELEASE</spring.data>
 		<junit.version>4.11</junit.version>
+		<mysql.version>5.1.29</mysql.version>
+		<hb.manager>4.2.5.Final</hb.manager>
+		<spring.test>3.2.4.RELEASE</spring.test>
+		<javax.web>6.0</javax.web>
 	</properties>
 
 	<dependencies>
@@ -27,23 +32,21 @@
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-web-api</artifactId>
-			<version>6.0</version>
+			<version>${javax.web}</version>
 			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>3.1.0.RELEASE</version>
+			<version>${spring.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context-support</artifactId>
-			<version>3.1.0.RELEASE</version>
+			<version>${spring.version}</version>
 		</dependency>
-
-
 
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -55,6 +58,18 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+			<version>${spring.data}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${hb.manager}</version>
 		</dependency>
 
 		<dependency>

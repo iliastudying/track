@@ -1,4 +1,4 @@
-package ru.ifmo.kot.track.data;
+package ru.ifmo.kot.track.mvc.data;
 
 /**
  * Created by Ilia on 14.12.2014.
