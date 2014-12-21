@@ -2,10 +2,18 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link href="http://bogdan.nordfire.ru/css/main.css" type="text/css" rel="stylesheet">
+        <link href="http://bogdan.nordfire.ru/css/bootstrap.css" type="text/css" rel="stylesheet">
         <title>Spring MVC and Velocity</title>
     </head>
     <body>
-        <h1>Spring MVC and Velocity</h1>
+    <div class="menu">
+        <a  href='$indexLink' class="menuDiv" style="float: left; " data-hover="Главная" ></a>
+        <a  href='$questeditLink' class="menuDiv" data-hover="Задачи" style="float: left; "></a>
+        <a  href='$usereditLink' class="menuDiv" data-hover="Пользователи" style="float: left; " ></a>
+        <a  href='$loginLink' class="menuDiv" data-hover="Выход"  style="float: right; padding-right:20px; "></a>
+        <a  href='$userpageLink' class="menuDiv" data-hover="Аккаунт" style="float: right; "></a>
+    </div>
 
             $screen_content
 

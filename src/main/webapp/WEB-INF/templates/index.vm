@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="generator"
+          content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+
+<link href="http://bogdan.nordfire.ru/css/main.css" type="text/css" rel="stylesheet">
+<link href="http://bogdan.nordfire.ru/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <title>Feed</title>
+
+</head>
+<body>
+
+<div class="background-login-index">
+    <div class="spacerBig"></div>
+    <div class="panel panel-default holder">
+        <div class="panel-heading">
+            <div class="qTitle">
+                <p class="qTitle">
+                    <a href="$taskLink" class="bl">$taskName</a>
+                </p>
+            </div>
+
+
+
+            <div class="questStat1">
+                <p class="qMid">Срок: $dateTime</p>
+                <p class="qMid">Исполнители:
+                    #foreach ( $name in $employeeNameList ) ##некий массив из имен исполнителей
+                     <a href="$link">  $name </a>
+                    #end
+                <p class="qSmall">$createDate</p> ##дата создания задачи, берется из бд
+                <p class="qSmall">Создатель:
+                    <a href="$creatorLink">$creator</a></p>
+            </div>
+
+            <div class="questStat2">
+                <p class="qImport">Важность: $importancy</p>
+                <div class="progress progressBarNew">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="$percentage" aria-valuemin="0" aria-valuemax="100"
+                         style="width:$percentage%;">$percentage%</div>
+                </div>
+                <input class="button_2New btn btn-primary" type="button" value="Редактировать" />
+            </div>
+        </div>
+        <div class="panel-body questText">
+            $taskText
+                <a href="$taskLink">(подробнее...)</a>
+            </p></div>
+    </div>
+
+
+
+
+##велосити может обращаться к объектам java (${item} - это объект ), методам, полям  $menu.size() $page.title
+##по хорошему вам нужно сделать метод, который берет из бдшки айдишник некоторой задачи и потом выводит всю информацию блоком об этой задаче и выводить ее на страницу
+
+            <nav>
+        <ul class="pagination" style="position:absolute; left:50%;">
+            <li class="disabled">
+                <a href="#">
+                    <span aria-hidden="true">«</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#">1
+                    <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </nav>
+    <br />
+    <br />
+</div>
+</body>
+</html>
