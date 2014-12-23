@@ -13,4 +13,5 @@ public interface UserzService {
     userz getByName(String name);
     void editUser(userz user);
     List<userz> getAll();
+    userz getById(long id);
 }

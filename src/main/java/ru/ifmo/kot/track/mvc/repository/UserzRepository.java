@@ -11,6 +11,9 @@ import org.springframework.transaction.annotation.Transactional;
 import ru.ifmo.kot.track.mvc.entity.userz;
 
 public interface UserzRepository extends JpaRepository<userz, Long> {
+    @Query("select b from userz b where b.id = :id")
+    userz findById(@Param("id") long id);
+
     @Query("select b from userz b where b.name = :name")
     userz findByName(@Param("name") String name);
     @Modifying

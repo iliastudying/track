@@ -37,4 +37,9 @@ public class UwikizServiceImpl implements UwikizService {
     public List<uwikiz> getAll() {
         return uwikizRepository.findAll();
     }
+
+    @Override
+    public uwikiz getById(long id) {
+        return uwikizRepository.findById(id);
+    }
 }

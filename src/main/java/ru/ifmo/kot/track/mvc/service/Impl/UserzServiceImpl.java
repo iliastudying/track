@@ -45,5 +45,10 @@ public class UserzServiceImpl implements UserzService {
         return userzRepository.findAll();
     }
 
+    @Override
+    public userz getById(long id) {
+        return userzRepository.findById(id);
+    }
+
 
 }
