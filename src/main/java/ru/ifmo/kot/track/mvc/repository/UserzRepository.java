@@ -16,6 +16,8 @@ public interface UserzRepository extends JpaRepository<userz, Long> {
 
     @Query("select b from userz b where b.name = :name")
     userz findByName(@Param("name") String name);
+
+
     @Modifying
     @Transactional
     @Query("UPDATE userz b SET b.name = :name, b.pass = :pass, b.email = :email WHERE b.id = :id")

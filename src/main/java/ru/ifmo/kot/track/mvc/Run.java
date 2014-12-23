@@ -67,52 +67,55 @@ public class Run {
         for(Long t:l){
             System.out.println(t);
         }
+
+        System.out.println(c.getIdByName("Браун"));
+        System.out.println(c.getStatusById(1));
 /**
-        q=new questz("Задача №2", currentTimestamp, currentTimestamp);
-        q=qc.addQuest(q);
-        u=c.getByName("Браун");
-        uq.setUser(c.getByName("Браун"));
-        uq.setQuest(qc.getById(q.getId()));
-        uq.setActual(true);
-        u.getUserQuest().add(uq);
-        c.addUser(u);*/
+ q=new questz("Задача №2", currentTimestamp, currentTimestamp);
+ q=qc.addQuest(q);
+ u=c.getByName("Браун");
+ uq.setUser(c.getByName("Браун"));
+ uq.setQuest(qc.getById(q.getId()));
+ uq.setActual(true);
+ u.getUserQuest().add(uq);
+ c.addUser(u);*/
 //
 
-   /**
+                /**
 
-     uwikiz uw, uw2;
-     List<uwikiz> uu;
-     //Добавление пользователя
-     u=new userz("Браун","123","гость1","fuck@mail.ru", d);
-     c.addUser(u);
-     //Добавления Wiki страницы пользователя
-      uw=new uwikiz("Тратата","Большой текст", d, null, c.getByName("Браун"));
-      uw2=new uwikiz("Тратата1","Большой текст2", d, null,c.getByName("Браун"));
-     course.addUwiki(uw);
-     course.addUwiki(uw2);
-     //Добавление Задачи
-     q=new questz("Задача №1", currentTimestamp, currentTimestamp);
-     q.setId(1);
-     qc.addQuest(q);
-     //Добавление Wiki страницы задачи
-     qw=new qwikiz("1", "ТЕКСТ", d, d, "ВАЖНО!", "0", "s", null, qc.getById(q.getId()));
-     qwc.addQwiki(qw);
-     //Добавление связи Задача-Пользователь
-       userquest uq = new userquest();
-       q1=new questz("Задача №2", currentTimestamp, currentTimestamp);
-    u1=new userz("Уайт","12345","админ","admin@mail.ru", d);
-        c.addUser(u1);
-       u1=c.getByName("Уайт");
-        q1=qc.addQuest(q1);
-      //  uq.setUser(u1);
-       // uq.setQuest(qc.getById(q1.getId()));/
-       // uq.setActual(false);
-       //u1.getUserQuest().add(uq);
-      // c.addUser(u1);
-        //dd
-        q=qc.getById(1);
-       q.setName("Уайт1");
-        qc.editQuest(q);*/
+                 uwikiz uw, uw2;
+                 List<uwikiz> uu;
+                 //Добавление пользователя
+                 u=new userz("Браун","123","гость1","fuck@mail.ru", d);
+                 c.addUser(u);
+                 //Добавления Wiki страницы пользователя
+                 uw=new uwikiz("Тратата","Большой текст", d, null, c.getByName("Браун"));
+                 uw2=new uwikiz("Тратата1","Большой текст2", d, null,c.getByName("Браун"));
+                 course.addUwiki(uw);
+                 course.addUwiki(uw2);
+                 //Добавление Задачи
+                 q=new questz("Задача №1", currentTimestamp, currentTimestamp);
+                 q.setId(1);
+                 qc.addQuest(q);
+                 //Добавление Wiki страницы задачи
+                 qw=new qwikiz("1", "ТЕКСТ", d, d, "ВАЖНО!", "0", "s", null, qc.getById(q.getId()));
+                 qwc.addQwiki(qw);
+                 //Добавление связи Задача-Пользователь
+                 userquest uq = new userquest();
+                 q1=new questz("Задача №2", currentTimestamp, currentTimestamp);
+                 u1=new userz("Уайт","12345","админ","admin@mail.ru", d);
+                 c.addUser(u1);
+                 u1=c.getByName("Уайт");
+                 q1=qc.addQuest(q1);
+                 //  uq.setUser(u1);
+                 // uq.setQuest(qc.getById(q1.getId()));/
+                 // uq.setActual(false);
+                 //u1.getUserQuest().add(uq);
+                 // c.addUser(u1);
+                 //dd
+                 q=qc.getById(1);
+                 q.setName("Уайт1");
+                 qc.editQuest(q);*/
 
     }
 }

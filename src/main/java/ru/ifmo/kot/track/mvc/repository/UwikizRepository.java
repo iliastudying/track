@@ -12,5 +12,4 @@ import ru.ifmo.kot.track.mvc.entity.uwikiz;
 public interface UwikizRepository extends JpaRepository<uwikiz, Long> {
     @Query("select b from uwikiz b where b.id = :id")
     uwikiz findById(@Param("id") long id);
-
 }

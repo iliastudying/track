@@ -12,4 +12,5 @@ public interface UserQuestService {
    List<Long> findQuestbyUserId(long id);
     userquest addUserQuest(userquest uq);
     List<Long> findUserByQuestId(long id);
+
 }
