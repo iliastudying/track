@@ -1,8 +1,10 @@
 package ru.ifmo.kot.track.mvc.entity;
 
+import org.hibernate.annotations.Check;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.sql.Timestamp;
 import java.sql.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -15,6 +17,7 @@ import static javax.persistence.GenerationType.IDENTITY;
 
     @Entity
     @Table(name = "questz")
+
     public class questz {
 
         @Id
@@ -27,10 +30,10 @@ import static javax.persistence.GenerationType.IDENTITY;
         private String name;
 
         @Column(name = "date_created")
-        private Date date_created;
+        private Timestamp date_created;
 
         @Column(name = "last_created")
-        private Date last_created;
+        private Timestamp last_created;
 
         @OneToMany(fetch = FetchType.LAZY, mappedBy = "quest_id")
         private Set<qwikiz> qwiki=new HashSet<qwikiz>(0);
@@ -46,7 +49,7 @@ private Set<userquest> uq =new HashSet<userquest>(0);
          public questz(){
          };
 
-        public questz(String name, Date date_created, Date last_created) {
+        public questz(String name, Timestamp date_created, Timestamp last_created) {
             this.name = name;
             this.date_created = date_created;
             this.last_created = last_created;
@@ -70,19 +73,19 @@ private Set<userquest> uq =new HashSet<userquest>(0);
             this.name = name;
         }
 
-        public Date getDate_created() {
+        public Timestamp getDate_created() {
             return date_created;
         }
 
-        public void setDate(Date date_created) {
+        public void setDate(Timestamp date_created) {
             this.date_created = date_created;
         }
 
-        public Date getLast_created() {
+        public Timestamp getLast_created() {
             return last_created;
         }
 
-        public void setLast_created(Date last_created) {
+        public void setLast_created(Timestamp last_created) {
             this.last_created = last_created;
         }
 

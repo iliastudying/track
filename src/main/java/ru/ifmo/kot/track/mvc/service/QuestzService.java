@@ -11,6 +11,6 @@ public interface QuestzService {
     questz addQuest(questz quest);
     void delete(long id);
     questz getById(long id);
-    questz editQuest(questz quest);
+    void editQuest(questz quest);
     List<questz> getAll();
 }
