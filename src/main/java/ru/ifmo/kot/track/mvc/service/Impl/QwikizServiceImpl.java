@@ -25,9 +25,6 @@ public class QwikizServiceImpl implements QwikizService {
         qwikizRepository.delete(id);
     }
 
-
-
-
     @Override
     public qwikiz editQwiki(qwikiz qwiki) {
         return qwikizRepository.saveAndFlush(qwiki);
@@ -36,5 +33,10 @@ public class QwikizServiceImpl implements QwikizService {
     @Override
     public List<qwikiz> getAll() {
         return qwikizRepository.findAll();
+    }
+
+    @Override
+    public qwikiz getById(long id) {
+        return qwikizRepository.findById(id);
     }
 }

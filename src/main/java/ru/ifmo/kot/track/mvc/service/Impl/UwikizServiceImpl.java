@@ -6,6 +6,7 @@ import ru.ifmo.kot.track.mvc.entity.uwikiz;
 import ru.ifmo.kot.track.mvc.repository.UwikizRepository;
 import ru.ifmo.kot.track.mvc.service.UwikizService;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -36,5 +37,21 @@ public class UwikizServiceImpl implements UwikizService {
     @Override
     public List<uwikiz> getAll() {
         return uwikizRepository.findAll();
+    }
+
+    @Override
+    public uwikiz getById(long id) {
+        return uwikizRepository.findById(id);
+    }
+
+    @Override
+    public List<Long> getUwikiIdbyUserId(long id)
+    {
+        List<uwikiz> uw=uwikizRepository.findUwikiByIdUser(id);
+        List<Long> user_id=new ArrayList<Long>(0);
+        for (uwikiz f : uw){
+            user_id.add(f.getId());
+        }
+        return user_id;
     }
 }

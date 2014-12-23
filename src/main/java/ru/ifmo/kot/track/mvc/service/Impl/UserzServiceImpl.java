@@ -33,6 +33,12 @@ public class UserzServiceImpl implements UserzService {
         return userzRepository.findByName(name);
     }
 
+    @Override
+    public long getIdByName(String name) {
+       userz u= userzRepository.findByName(name);
+        return u.getId();
+    }
+
 
     @Override
     public void editUser (userz user) {
@@ -45,5 +51,16 @@ public class UserzServiceImpl implements UserzService {
         return userzRepository.findAll();
     }
 
+    @Override
+    public userz getById(long id) {
+        return userzRepository.findById(id);
+    }
+
+    @Override
+    public String getStatusById(long id) {
+        userz u=userzRepository.findById(id);
+
+        return u.getStatus();
+    }
 
 }

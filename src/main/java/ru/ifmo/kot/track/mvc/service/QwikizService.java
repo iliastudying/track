@@ -12,4 +12,5 @@ public interface QwikizService {
     void delete(long id);
     qwikiz editQwiki(qwikiz qwiki);
     List<qwikiz> getAll();
+    qwikiz getById(long id);
 }

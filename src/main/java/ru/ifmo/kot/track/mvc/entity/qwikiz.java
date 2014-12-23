@@ -3,12 +3,14 @@ package ru.ifmo.kot.track.mvc.entity;
 /**
  * Created by fanmilan007 on 20.12.2014.
  */
+import org.hibernate.annotations.Check;
 import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.sql.Date;
 
 @Entity
 @Table(name = "qwikiz")
+
 public class qwikiz {
 
     @Id

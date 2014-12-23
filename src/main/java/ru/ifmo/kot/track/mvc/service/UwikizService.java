@@ -13,4 +13,6 @@ public interface UwikizService {
     //Bank getByName(String name);
     uwikiz editUwiki(uwikiz uwiki);
     List<uwikiz> getAll();
+    List<Long> getUwikiIdbyUserId(long id);
+    uwikiz getById(long id);
 }
