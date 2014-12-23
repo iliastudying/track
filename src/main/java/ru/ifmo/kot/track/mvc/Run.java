@@ -33,6 +33,7 @@ public class Run {
         UserQuestServiceImpl uqc = context.getBean(UserQuestServiceImpl.class);
       userz u,u1;
       questz q;
+        uwikiz uw, uw2;
         userquest uq = new userquest();
         qwikiz qw;
         Calendar calendar = Calendar.getInstance();
@@ -42,12 +43,17 @@ public class Run {
         u=new userz("Браун","123","администратор","hi@mail.ru", d);
         u=c.addUser(u);
 
+
+
         q=new questz("Задача №1", currentTimestamp, currentTimestamp);
         q=qc.addQuest(q);
 
         uq.setUser(u);
         uq.setQuest(qc.getById(q.getId()));
         uq.setActual(false);
+        uw=new uwikiz("Тратата","Большой текст", d, null, c.getById(1));
+        // uw2=new uwikiz("Тратата1","Большой текст2", d, null,c.getByName("Браун"));
+        course.addUwiki(uw);
         uqc.addUserQuest(uq);
         /**u.getUserQuest().add(uq);
         c.addUser(u);*/
@@ -56,8 +62,10 @@ public class Run {
         uq.setUser(u);
         uq.setQuest(qc.getById(q.getId()));
         uq.setActual(true);
+
         uqc.addUserQuest(uq);
         List<Long> l=new ArrayList<Long>();
+
         l=uqc.findQuestbyUserId(1);
         for(Long t:l){
             System.out.println(t);
@@ -70,6 +78,9 @@ public class Run {
 
         System.out.println(c.getIdByName("Браун"));
         System.out.println(c.getStatusById(1));
+
+
+        ;
 /**
  q=new questz("Задача №2", currentTimestamp, currentTimestamp);
  q=qc.addQuest(q);

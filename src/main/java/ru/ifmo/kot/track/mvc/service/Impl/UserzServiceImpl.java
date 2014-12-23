@@ -59,6 +59,7 @@ public class UserzServiceImpl implements UserzService {
     @Override
     public String getStatusById(long id) {
         userz u=userzRepository.findById(id);
+
         return u.getStatus();
     }
 
