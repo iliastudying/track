@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+##        <link href="/css/test.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <script type="text/javascript" src="assets/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="assets/scripts.js"></script>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <title>Feed</title>
+    </head>
+    <body>
+        <div class="menu">
+            <a  href='' class="menuDiv" style="float: left; " data-hover="Главная" ></a>
+            <a  href='' class="menuDiv" data-hover="Задачи" style="float: left; "></a>
+            <a  href='' class="menuDiv" data-hover="Пользователи" style="float: left; " ></a>
+            <a  href='' class="menuDiv" data-hover="Выход"  style="float: right; padding-right:20px; "></a>
+            <a  href='' class="menuDiv" data-hover="Аккаунт" style="float: right; "></a>
+        </div>
+
+            $screen_content
+
+        <hr/>
+        ITMO University 2014
+    </body>
+</html>

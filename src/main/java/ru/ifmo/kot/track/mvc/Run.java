@@ -1,19 +1,17 @@
 package ru.ifmo.kot.track.mvc;
 
-import ru.ifmo.kot.track.mvc.entity.*;
-import ru.ifmo.kot.track.mvc.service.Impl.QwikizServiceImpl;
+import ru.ifmo.kot.track.mvc.model.entity.*;
+import ru.ifmo.kot.track.mvc.model.service.Impl.QwikizServiceImpl;
 import org.hibernate.cfg.AnnotationConfiguration;
 import org.hibernate.tool.hbm2ddl.SchemaExport;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import ru.ifmo.kot.track.mvc.config.DataConfig;
-import ru.ifmo.kot.track.mvc.service.Impl.QuestzServiceImpl;
-import ru.ifmo.kot.track.mvc.service.Impl.UserzServiceImpl;
-import ru.ifmo.kot.track.mvc.service.Impl.UwikizServiceImpl;
+import ru.ifmo.kot.track.mvc.model.config.DataConfig;
+import ru.ifmo.kot.track.mvc.model.service.Impl.QuestzServiceImpl;
+import ru.ifmo.kot.track.mvc.model.service.Impl.UserzServiceImpl;
+import ru.ifmo.kot.track.mvc.model.service.Impl.UwikizServiceImpl;
 import java.sql.Date;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 /**
  * Created by fanmilan007 on 20.12.2014.

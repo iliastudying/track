@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import ru.ifmo.kot.track.mvc.data.QuestService;
+import ru.ifmo.kot.track.mvc.temp.QuestService;
 
 /**
  * Created by Ilia on 14.12.2014.

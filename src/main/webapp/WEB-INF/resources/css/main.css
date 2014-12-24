@@ -1,0 +1,457 @@
+@charset "utf-8";
+
+@font-face {
+   font-family: tahoma, tahoma, verdana, arial, sans-serif;
+}
+
+*
+{
+font-family: tahoma, tahoma, verdana, arial, sans-serif;
+}
+.menu {
+	top: 0px;
+	left: 0px;
+	height: 35px;
+	position: absolute;
+	width: 100%;
+	z-index: 30;
+	/*border: 3px solid  #337ab7;*/
+	
+	background: #337ab7;
+	/*list-style:none;*/
+	color: #fff;
+	margin-left:0px;
+	font-size: 14px;
+	}
+.forgPassHolder label,.loginHolder label  {
+font-weight:normal;
+position:relative;
+float:left; 
+padding-right:10px;
+margin-top:0px;
+margin-left:60px;
+}
+ul.menuElem {
+    margin: 1px; 
+    padding: 4px; 
+    }
+ul.menuElem li {
+    display: inline-block; 
+    margin-right: 15px; 
+    margin-left: 15px;
+    padding: 5px; 
+    }
+    .text{
+	padding-top:8px;
+	padding-left:100px;
+    }
+
+ .button{
+
+margin-top: 5px;
+width: auto;
+
+ }
+  .button_2{
+
+margin-top: 15px;
+width: auto;
+float: left;
+text-align: center;
+ }
+	
+.button_2New{
+margin-top: -8px;
+width: auto;
+margin-right:0px;
+float: right;
+text-align: center;
+ }
+a {
+    color: #eff9fc;
+    margin-top: -20px;
+    
+	}
+a:hover {
+color: #eff9fc;
+ margin-top: -20px;
+ 
+    }
+a.bl {
+    color: #000; 
+	}
+a.bl:visited {
+    color: #000; 
+    }
+	a.bl:hover  {
+	text-decoration: none;
+    color: #000; 
+	}
+   
+.spacerBig {
+	top: 0px;
+	height: 100px;
+	}
+	
+.spacerMini {
+	height: 50px;
+	}
+
+.spacerVeryMini {
+	height: 25px;
+	}
+
+.holder {
+	width:800px;
+	position:relative;
+	left: 50%;
+    margin-left: -400px;
+	border: 1px solid #ACACAC;
+}
+	
+.questStat1 {
+	width:460px;
+	left: 0px;
+	top:-20px;
+    position: relative;
+	padding-left:20px;
+	border: 0px  solid  #000;
+	display:inline-block;
+	}
+	
+.questStat2 {
+	position: relative;
+	padding-right:20px;
+	border: 0px  solid  #000;
+	display:inline-block;
+width:300px;
+
+	top:-4px;
+	}
+	
+.questText {
+    position:relative;
+	margin-right:15px;
+	margin-left:15px;
+	line-height:18px;
+	}
+	
+p.qTitle {
+	color: black ;
+	font-size: 25px;
+	padding: 4px;
+	text-align: center;
+	line-height: 30px;
+	}
+	
+p.qMid {
+	color: #000000;
+	font-size: 14px;
+	margin:0px;
+	margin-bottom:2px;
+	padding:0px;
+	line-height:16px;
+	display:inline-block;
+	}
+	
+p.qUser {
+	color: #000000;
+	font-size: 20px;
+	margin:0px;
+	margin-bottom:2px;
+	padding:0px;
+	line-height:20px;
+	
+	}
+	
+p.qSmall {
+	color: #000000;
+	font-size: 10px;
+	margin:0px;
+	margin-bottom:-2px;
+	padding:0px;
+	}
+	
+p.qImport {
+	color: #000000;
+	font-size: 18px;
+	text-align: right;
+	}
+
+div.qTitle
+{
+display:inline-block;
+border: 0px solid black;
+width:100%;
+	left: 0px;
+	top:0px;
+    position: relative;
+	padding:20px;
+}
+
+p.qImportNew {
+	color: #000000;
+	font-size: 18px;
+	margin-bottom: 5px;
+	padding-right: 10%;
+	text-align: left;
+	margin-left:-10px;
+	}
+
+p.qEdit {
+    border: 1px solid #000;
+	margin-top:2px;
+    padding: 4px;
+	padding-left:15px;
+	font-size: 15px;
+	width:113px;
+    }
+	
+.editLock {
+	width:104%;
+	margin:-4px;
+	border:0px;
+	}
+	
+/* ------------------------------------------------ */
+
+.inp {
+	width:50%;
+	margin-top: 0px;
+	background: #fff;
+	opacity:1;
+	padding-left:2px;
+	border:1px solid #337ab7;
+	color: #000;
+	
+	}
+
+.loginTable {
+padding-top:20px;
+margin-left:6px;
+	color: #000000;
+	font-size: 14px;
+	}
+
+	
+	
+.loginHolder {
+	width: 480px;
+	margin-top:25%;
+	margin-left:25%;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-left: 25px;
+	padding-bottom: 40px;
+	border: 3px solid    #337ab7;
+	background: #FFFFFF;
+	border-radius: 15px;
+	clear:both; text-align:right;
+	
+}
+.loginHolder label
+{
+float:left;
+
+}
+.field {
+padding-bottom:4px;
+line-height:20px; 
+ }
+
+.userEditHolder {
+	width: 600px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -135px;
+	margin-left: -293px;
+	padding-top: 50px;
+	padding-right: 50px;
+	padding-left: 85px;
+	padding-bottom: 50px;
+	border: 3px solid #337ab7;
+	background-color:white;
+	border-radius:15px;
+}
+
+.forgPassHolder {
+	background: white;
+	width: 500px;
+	position:absolute;
+	top: 25%;
+	right: 25%;
+	margin-top: 0;
+	margin-left: 0;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-left: 25px;
+	padding-bottom: 50px;
+	border: 3px solid    #337ab7;
+	border-radius: 15px;
+
+	clear:both; text-align:right;
+}
+
+/* ------------------------------------------------ */
+
+.background-login{
+	position: absolute;
+	width: 60%;
+	background: #eff9fc;
+	margin-left: 20%;
+	height:100% ;
+	margin-bottom:10px;
+}
+
+.background-login-index{
+	position: absolute;
+	width: 60%;
+	background: #eff9fc;
+	margin-left: 20%;
+	height:auto ;
+	margin-bottom:10px;
+}
+
+.questEditholder {
+	width:90%;
+	height:80%;
+	
+	position:absolute;
+	left: 80px;
+	top: 80px;
+	
+}
+
+.questProp {
+	width:330px;
+	left: 0px;
+	top:0px;
+	
+	z-index:7;
+	
+	}
+	
+.microList {
+	overflow:auto;
+	height:95px;
+	width:50%;
+	border: 1px solid gray;
+	
+	
+}
+
+.questTextEditor {
+	width:70%;
+	height:100%;
+	left:360px;
+	top:0px;
+    position: absolute;
+	
+	display:inline-block; 
+	
+	}
+	
+.bigTextArea {
+	width:100%;
+	resize: none;
+}
+
+/* ------------------------------------------------ */
+
+.userInfoEditHolder {
+	width: 800px;
+	position: relative;
+	top: 150px;
+	left: 50%;
+	margin-left: -400px;
+	border: 1px solid #ACACAC;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	padding-top:40px;
+}
+
+
+
+a[class^="menuDiv"] {
+	left:3px;
+    width: auto;
+    margin: 0 3px;
+	height: 20px;
+    padding: 5px 5px;  
+	position: relative;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 1px;
+    outline: none;
+	font-weight: 500;	
+	background-color:#337ab7;
+	color: #fff;
+}
+a:hover[class^="menuDiv"] {
+text-decoration: none;
+}
+
+.menuDiv {
+    font-size: 16px;
+    background-color: #fff;
+	color: dodgerblue;
+	font-weight: bold;
+}
+
+.menuDiv:before {
+    content: attr(data-hover);
+    position: relative;
+	color: #fff;
+	transition: transform 0.3s, opacity 0.2s;
+	
+}
+
+.menuDiv:hover:before {
+	cursor:pointer;
+    transform: scale(0.9);
+	/*-webkit-transform: scale(0.9);*/
+	color:snow;
+	text-decoration:none;
+	opacity: 0.5;
+	
+}
+
+
+
+.progressBarNew{
+
+border: 1px solid #337ab7;
+}
+
+
+
+.date
+{
+width:auto;
+height:20px;
+
+}
+.time
+{
+width:auto;
+height:20px;
+}
+
+.inputQuestText
+{
+
+width:200px;
+height:20px;
+}
+.percent
+{
+width:8%;
+}
+
+.questEditholder label {
+text-align:left;
+padding-left:5px;
+clear:both;
+}
