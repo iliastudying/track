@@ -12,8 +12,8 @@ import java.util.Set;
 
 @Entity
 @Table(name = "userz", uniqueConstraints = {
-        @UniqueConstraint(columnNames = "name"),
         @UniqueConstraint(columnNames = "email") })
+
 public class userz {
 
     @Id
@@ -54,10 +54,9 @@ public class userz {
    @OneToMany(fetch = FetchType.EAGER, mappedBy = "pk.user", cascade=CascadeType.ALL)
    private Set<userquest> uq =new HashSet<userquest>(0);
 
-   public Set<userquest> getUserQuest() {
-       return uq;
-   }
-
+    public Set<userquest> getUserQuest() {
+        return uq;
+    }
     public void setUserQuest(Set<userquest> uq) {
         this.uq = uq;
     }

@@ -2,9 +2,9 @@ package ru.ifmo.kot.track.mvc.model.service.Impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.ifmo.kot.track.mvc.model.entity.questz;
-import ru.ifmo.kot.track.mvc.model.repository.QuestzRepository;
-import ru.ifmo.kot.track.mvc.model.service.QuestzService;
+import ru.ifmo.kot.track.mvc.entity.questz;
+import ru.ifmo.kot.track.mvc.repository.QuestzRepository;
+import ru.ifmo.kot.track.mvc.service.QuestzService;
 
 import java.util.List;
 
@@ -27,8 +27,12 @@ public class QuestzServiceImpl implements QuestzService {
 
 
     @Override
-    public questz editQuest (questz quest) {
-        return questzRepository.saveAndFlush(quest);
+    public void editQuest (questz quest) {
+       // Calendar calendar = Calendar.getInstance();
+        //java.util.Date now = calendar.getTime();
+        //Timestamp currentTimestamp = new Timestamp(now.getTime());
+        questzRepository.EditQuest(quest.getName(), quest.getDate_created(), quest.getLast_created(), quest.getId());
+        questzRepository.flush();
     }
 
     @Override

@@ -6,7 +6,7 @@ import javax.persistence.*;
  * Created by fanmilan007 on 21.12.2014.
  */
 @Entity
-@Table(name = "user_quest")
+@Table(name = "userquest")
 @AssociationOverrides({
         @AssociationOverride(name = "pk.user",
                 joinColumns = @JoinColumn(name = "user_id")),

@@ -1,10 +1,10 @@
 package ru.ifmo.kot.track.mvc.model.service.Impl;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import ru.ifmo.kot.track.mvc.model.entity.userz;
 import ru.ifmo.kot.track.mvc.model.repository.UserzRepository;
 import ru.ifmo.kot.track.mvc.model.service.UserzService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 

@@ -5,7 +5,7 @@ package ru.ifmo.kot.track.mvc.model.repository;
  */
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import ru.ifmo.kot.track.mvc.model.entity.qwikiz;
+import ru.ifmo.kot.track.mvc.entity.qwikiz;
 
 public interface QwikizRepository extends JpaRepository<qwikiz, Long> {
 }

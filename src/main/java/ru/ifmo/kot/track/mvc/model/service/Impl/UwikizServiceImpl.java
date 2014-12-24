@@ -2,9 +2,9 @@ package ru.ifmo.kot.track.mvc.model.service.Impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.ifmo.kot.track.mvc.model.entity.uwikiz;
-import ru.ifmo.kot.track.mvc.model.repository.UwikizRepository;
-import ru.ifmo.kot.track.mvc.model.service.UwikizService;
+import ru.ifmo.kot.track.mvc.entity.uwikiz;
+import ru.ifmo.kot.track.mvc.repository.UwikizRepository;
+import ru.ifmo.kot.track.mvc.service.UwikizService;
 
 import java.util.List;
 

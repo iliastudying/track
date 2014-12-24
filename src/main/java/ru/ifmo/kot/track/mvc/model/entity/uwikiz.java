@@ -3,7 +3,9 @@ package ru.ifmo.kot.track.mvc.model.entity;
 /**
  * Created by fanmilan007 on 20.12.2014.
  */
+
 import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.*;
 import java.sql.Date;
 

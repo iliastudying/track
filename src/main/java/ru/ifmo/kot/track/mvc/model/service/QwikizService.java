@@ -1,6 +1,6 @@
 package ru.ifmo.kot.track.mvc.model.service;
 
-import ru.ifmo.kot.track.mvc.model.entity.qwikiz;
+import ru.ifmo.kot.track.mvc.entity.qwikiz;
 
 import java.util.List;
 
